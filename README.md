@@ -14,5 +14,5 @@ Semaphores are supported through class _sem in C API and class Semaphore in C++ 
 Synchronous context switching is provided through specific system call, while asynchronous context switching is 
 evoked through timer or keyboard interrupt.   
   
-Interrupt routine is typed in ricv.cpp file, which functionalities are used by system calls in syscall_c.cpp file. System calls sets up arguments through registers and calls enviroment call which calls interrupt routine.
+Interrupt routine is typed in ricv.cpp file, which functionalities are used by system calls in syscall_c.cpp file. System calls sets up arguments through registers and calls enviroment call which calls interrupt routine. Interrupt routine is run in privileged mode.
 
